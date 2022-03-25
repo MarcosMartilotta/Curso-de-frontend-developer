@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Aca muestro los selectores combinados */
+        div {
+            background-color: deeppink
+        }
+        /* Si pongo un selector seguido de otro con un espacio se refiere a que todos los hijos p (en este caso), que se encuentren
+        dentro de los div */
+        div p {
+            color: lightcoral;
+        }
+
+        /* este es el selector de hijos directo, por ejemplo si hubiera otro div y dentro de ese la clase .rojo este no lo agarrara pero el anterior si */
+        div > .rojo {
+            color: red;
+        }
+       
+        /* Adyacente, este seleccionara al que está inmediatamente despues en el codigo */
+        div + p {
+            background-color: goldenrod;
+        }
+        /* A diferencia del anterior este va a seleccionar a todos los hermanos, o sea todos los que esten al mismo nivel y cumplan con ser parrafos en este caso */
+        div ~ p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Platzi</p>
+        <p class="rojo" >Segunda linea</p>
+        <p>tercera linea</p>
+    </div>
+    <p>Un parrafo afuera</p>
+    <p>Un parrafo afuera</p>
+
+</body>
+</html>
