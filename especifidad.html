@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #platzi {
+            color: red;
+        }
+        .master {
+            color: blue;
+        }
+    </style>
+</head>
+<!-- Cada tipo de selector, psudoclase, psudoelemento etc, tiene un numero de especificidad,
+estos, al armar el selector, se van a sumar dando un valor de especificidad. Si es mas alto que algun otro selector de mas abajo
+de todas maneras prevalecerá. 
+https://specificity.keegan.st/-->
+<body>
+    <!-- Aca se va a ver de color rojo aunque el ultimo selector sea el azul porque id es mas especifico que class -->
+    <div id="platzi" class="master">Platzi</div>
+</body>
+</html>

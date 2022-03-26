@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Los pseudoelementos vendrian a ser como elementos de html que no necesariamente deben estar escritos
+    ahora, las pseudoclases podrian verse como estados de distintos elementos, visitado, no visitado etc.
+    aca hay un listado de todos
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements 
+    https://css-tricks.com/pseudo-class-selectors/-->
+    <style>
+        div p:nth-child(2) {
+            color : paleturquoise
+        }
+        ::placeholder{
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>linea1</p>
+        <p>linea2</p>
+        <p>linea3</p>
+    </div>
+    <input type="text" placeholder="nombre">
+</body>
+</html>
