@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- El z index sirve para especificar el orden en el eje z emepezando por el mobnitor hacia nosotros, de los distintos elementos
+    de la pagina. El orden del HTMaL IMPORTa, los de abajo se prevalecen por encima de los de la parte superior
+    si por ejemplo tengo un div red que tiejne un hermano div blue y este ultimo un hijo div yellow, si el zindez del blue es menor que el del red, por mas que este arriba o abajo en el html 
+    y por mas que el z-indez del yellow lo pongamos super alto, el yellow nunca estara encima del red porque el hermano (blue) tiene un index menor que el red-->
+    <style>
+        div {
+            position: absolute;
+            background: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <div>Random 1</div>
+    <div>Random 2</div>
+    <div>Random 3 </div>
+</body>
+</html>
