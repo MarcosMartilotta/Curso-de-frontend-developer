@@ -41,16 +41,30 @@
             display: flex;
         }
 
+       
+
+        .contact {
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 3em;
+            background-color: rgb(102,118,129);
+            border-top: solid 1px rgba(0,0,0,0.3);
+            border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0;
+            padding: 0;
+            position: relative;
+            top: 50px;
+        }
         .container {
             width:100%;
-            height: 100%;
+            height: 50px;
             background-color: white;
             text-align: center;
             margin-top: 20px;
             position: relative;
-            bottom: 0px;
+            top: 30px;
+            padding: 5px;
         }
-
     </style>
 </head>
 
@@ -60,7 +74,11 @@
         <img src="https://i.pinimg.com/originals/48/cf/d3/48cfd3e24c67893ea97fbfdd8fdc7a14.jpg">                      
         <img src="perfil.jpg">
         <p>Marcos Martilotta</p>
-        <p>Front end Developer</p>
+        <p>Front end developer</p>
+        <section class="contact">
+            <div><p>GitHub!</p></div>
+            <div><p>Contacto</p></div>
+        </section>
             <div class="container">
                 <p>Hire me!</p>
             </div>

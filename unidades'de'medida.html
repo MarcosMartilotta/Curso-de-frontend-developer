@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tenemos varias unidades de medidas, las hay independientes y dependientes (absolutas y relativas), rem es una unidad de medida dependiente
+    y podemos hacer que la fuente sea de 62.5% en el html para que ahora un rem sea 10pixeles ya que esta medida esta relacionada con el tamagno 
+    de la fuente del html -->
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+
+        p {
+            font-size: 3rem; /* Como lo cambie mas arriba ahora esto va a ser de 10 pixeles y no de 16*3=45 pixeles */
+        }
+
+        .container {
+            width: 100px;
+            height: 100vh; /* esta propiedad va a indicar que quiero usar todo el ancho de la pantalla que el usuario ve */
+            background: plum; /* La propiedad anterior tambien puede usarse para vertical con vw */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
